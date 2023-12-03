@@ -51,6 +51,14 @@ body, html{
     vertical-align: middle;
 }
 
+img[alt]{
+    width: 20%;
+    height: auto;
+}
+.banner{
+    background-color: #ece6ce;
+}
+
 .banner img{
     width: 100%;
     height: auto;
@@ -58,6 +66,8 @@ body, html{
 
 .menu-section,.about-section,.order-section,.cater-section,.contact-section{
     background-color: #ece6ce;
-    padding-top: 18%;
+    padding-top: 14%;
+    padding-left: 5%;
+    padding-right: 5%;
     height: 100vh;
 }
