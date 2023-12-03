@@ -13,17 +13,17 @@
         <img src="Assets/BBB_Logo.png" alt="Logo of Between Breads Bistro" />
         <nav class="mainNav">
           <ul>
-            <li><a class="page-links" href="#menu">Menu</a></li>
-            <li><a class="page-links" href="#about-us">About Us</a></li>
-            <li><a class="page-links" href="#order">Order Now</a></li>
-            <li><a class="page-links" href="#cater">Catering</a></li>
-            <li><a class="page-links" href="#contact-us">Contact Us</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#order">Order Now</a></li>
+            <li><a href="#cater">Catering</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
             <li>
-              <a href="#"><img class="page-links" src="Assets/fbLogo.png" /></a>
+              <a href="#"><img class="fblink" src="Assets/fbLogo.png" /></a>
             </li>
             <li>
               <a href="#"
-                ><img class="page-links" src="Assets/instaLogo.png"
+                ><img class="instalink" src="Assets/instaLogo.png"
               /></a>
             </li>
           </ul>
@@ -116,26 +116,35 @@
       <h3>We Dropoff your orders</h3>
       <form id="caterForm" action="cater-form.php" method="POST">
         <label for="name">Name</label>
-        <input type="text" name="name" /><br />
+        <input type="text" name="name" id="name" autocomplete="name" /><br />
 
         <label for="phNo">Phone Number</label>
-        <input type="text" name="phNo" /><br />
+        <input type="text" name="phNo" id="phNo" /><br />
 
         <label for="email">Email ID</label>
-        <input type="email" name="email" /><br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          autocomplete="email"
+        /><br />
 
-        <label for="eventType">Type of Event</label>
-        <input type="radio" name="limited" /> Limited Servive Catering
-        <input type="radio" name="full" /> Full Servive Catering<br />
+        Type of Event
+        <input type="radio" name="limited" id="limited" />
+        <label for="limited">Limited Service Catering </label>
+
+        <input type="radio" name="full" id="full" />
+        <label for="full">Full Service Catering</label>
+        <br />
 
         <label for="eventDate">Date of Event</label>
-        <input type="date" name="eventDate" /><br />
+        <input type="date" name="eventDate" id="eventDate" /><br />
 
         <label for="eventLoc">Event Location</label>
-        <input type="text" name="eventLoc" /><br />
+        <input type="text" name="eventLoc" id="eventLoc" /><br />
 
         <label for="guestNo">No. of Guests</label>
-        <input type="text" name="guestNo" /><br />
+        <input type="text" name="guestNo" id="guestNo" /><br />
 
         <input type="submit" value="Submit" />
       </form>
