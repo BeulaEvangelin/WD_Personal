@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap");
 
 body {
-  background-image: url("../BBB/Images/imgP12.jpg");
+  background-image: url("Assets/vecteezy_sandwich-with-ham-cheese-tomato-and-lettuce-on-black_23183589_542.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
@@ -15,6 +15,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  top:0;
 }
 
 header img {
@@ -33,7 +36,7 @@ nav {
   font-family: "Love Ya Like A Sister", sans-serif;
   text-decoration: none;
   padding: 10px;
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 section {
@@ -49,3 +52,4 @@ footer {
   bottom: 0;
   width: 100%;
 }
+<link rel="stylesheet" href="main.css" />
