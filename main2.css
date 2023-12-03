@@ -36,6 +36,19 @@ body, html{
 .mainNav ul li a{
     text-decoration: none;
     color: #ece6ce;
+    padding: 20px;
+}
+
+.fblink{
+    width: 20%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.instalink{
+    width: 27%;
+    height: auto;
+    vertical-align: middle;
 }
 
 .banner img{
