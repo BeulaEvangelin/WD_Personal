@@ -7,7 +7,7 @@ body, html{
 }
 
 #header{
-    background-color: black;
+    background: rgba(0, 0, 0, 0.9);
     padding: 25px;
     position: fixed;
     width: 100%;
@@ -36,4 +36,15 @@ body, html{
 .mainNav ul li a{
     text-decoration: none;
     color: #ece6ce;
+}
+
+.banner img{
+    width: 100%;
+    height: auto;
+}
+
+.menu-section,.about-section,.order-section,.cater-section,.contact-section{
+    background-color: #ece6ce;
+    padding-top: 18%;
+    height: 100vh;
 }
