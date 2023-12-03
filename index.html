@@ -100,6 +100,36 @@
       <button type="button">Order Delivery</button>
     </section>
 
+    <section id="cater">
+      <h1>Catering Services</h1>
+      <h3>We Dropoff your orders</h3>
+      <form id="caterForm" action="cater-form.php" method="POST">
+        <label for="name">Name</label>
+        <input type="text" name="name" /><br />
+
+        <label for="phNo">Phone Number</label>
+        <input type="text" name="phNo" /><br />
+
+        <label for="email">Email ID</label>
+        <input type="email" name="email" /><br />
+
+        <label for="eventType">Type of Event</label>
+        <input type="radio" name="limited" /> Limited Servive Catering
+        <input type="radio" name="full" /> Full Servive Catering<br />
+
+        <label for="eventDate">Date of Event</label>
+        <input type="date" name="eventDate" /><br />
+
+        <label for="eventLoc">Event Location</label>
+        <input type="text" name="eventLoc" /><br />
+
+        <label for="guestNo">No. of Guests</label>
+        <input type="text" name="guestNo" /><br />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+
     <section id="contact-us">
       <img src="" />
       <h1>Contact Us</h1>
