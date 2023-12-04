@@ -177,3 +177,27 @@ h1{
 .order-section h1{
     color: #ece6ce;
 }
+
+.order-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.order-container a{
+    position: relative;
+    top: 300px;
+    text-decoration: none;
+    color: #ece6ce;
+    padding: 20px;
+    
+}
+.order-container a p{
+    outline: #F9AC66 solid 3px;
+    margin: 1;  
+    padding: 2px;
+    text-align: center;
+    width: 150px;
+    
+}
