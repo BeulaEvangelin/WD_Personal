@@ -12,6 +12,7 @@ body, html{
     padding: 25px;
     position: fixed;
     width: 100%;
+    z-index: 10000;
 }
 
 .container{
@@ -108,30 +109,71 @@ h1{
 }
 
 .about-section p{
-    text-align: right;
-    width: 60%;
+    text-align: center;
+    width: 53%;
     float: right;
+    font-size: 1.4rem;
 }
 
-.about-section img{
-    width: 20%;
+.CF1container{
+    position: absolute;
+
+}
+.coFounder1img{
+    width: 18%;
     height: auto;
     border-radius: 50%;
+    top: 10px;
+    left: 5px;
+}
+.coFounder1{
+
+    outline: #F9AC66 solid 3px;
+    margin: 1;  
+    padding: 2px;
+    text-align: center;
+    width: 150px;
+
+}
+.CF1Text{
+    position: absolute;
+    top: 30px;
+    left: 230px;
 }
 
-.coFounder{
-    outline: #F9AC66 solid 4px;
+
+.CF2container{
+    position: absolute;
+
+}
+.coFounder2img{
+    width: 18%;
+    height: auto;
+    border-radius: 50%;
+    position: relative;
+    top: 100px;
+    left: 330px;
+}
+.coFounder2{
+    outline: #F9AC66 solid 3px;
     margin: 1;  
     padding: 2px;
     text-align: center;
     width: 150px;
 }
+.CF2Text{
+    position: absolute;
+    top: 280px;
+    left: 230px;;
+}
 
 .order-section{
     background-image: url("Assets/banner2.jpg");
-    background-size: 55%;
+    background-size: 50%;
     background-repeat: no-repeat;
-    
-    
+    background-position: center; 
 }
 
+.order-section h1{
+    color: #ece6ce;
+}
