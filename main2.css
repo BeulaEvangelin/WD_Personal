@@ -126,3 +126,12 @@ h1{
     text-align: center;
     width: 150px;
 }
+
+.order-section{
+    background-image: url("Assets/banner2.jpg");
+    background-size: 55%;
+    background-repeat: no-repeat;
+    
+    
+}
+
