@@ -85,8 +85,12 @@ h1{
    
 .menu-container{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: top;
+    align-content: space-around;
+	column-gap:50px;
+    
 }
 
 .menu-container ul{
@@ -96,10 +100,29 @@ h1{
 }
 
 .menu-container ul li h2{
-    text-align: center;
-    text-align: center;
+    text-align: left;
     text-decoration-line: underline;
     text-decoration-color: #F9AC66;
     text-decoration-thickness: 4px;
     text-underline-offset: 8px;
+}
+
+.about-section p{
+    text-align: right;
+    width: 60%;
+    float: right;
+}
+
+.about-section img{
+    width: 20%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.coFounder{
+    outline: #F9AC66 solid 4px;
+    margin: 1;  
+    padding: 2px;
+    text-align: center;
+    width: 150px;
 }
