@@ -39,7 +39,7 @@ $stmt->execute();
 
     <section class="section">
         <h1>Manage Menu</h2>
-        <a href="add-item.php">Add Item</a><br/>
+        <a class="tableButton" href="add-item.php">Add Item</a><br/>
         <br/><br/><br/>
         <table class="table">
             <tr>
@@ -58,8 +58,11 @@ $stmt->execute();
                     <td><?php echo $row['item_id']; ?></td>
                     <td><?php echo $row['category']; ?></td>
                     <td><?php echo $row['name_and_price']; ?></td>
-                    <td><?php echo $row['about_item']; ?></td>
-                    <td>Update Item Delete Item</td>
+                    <td><?php echo $row['about']; ?></td>
+                    <td>
+                        <a href="update-item.php?id=<?php echo $row['item_id']; ?>">Update</a><br/><br/>
+                        <a href="delete-item.php?id=<?php echo $row['item_id']; ?>">Delete</a>
+                    </td>
                 </tr>
                 <?php
             }

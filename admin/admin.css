@@ -38,14 +38,26 @@
     font-size: 0.8rem;
     text-align: center;   
 }
-
-.section{
-    background-color: #ece6ce;
-    padding-top: 30%;
+form {
     padding-left: 5%;
     padding-right: 5%;
-    padding: 20%;
+    text-align: center;
+}
+
+fieldset {
+    background: rgba(0, 0, 0, 0.9);
+    color: #ece6ce;
+    max-width: 400px;
+    padding: 16px;
+    margin: auto; 
+}
+.section{
+    background-color: #ece6ce;
+    padding-top: 16%;
+    padding-left: 5%;
+    padding-right: 5%;
     height: 100vh;
+    
 }
 
 .section h1{
@@ -89,11 +101,27 @@
 }
 
 .table tr th{
-    border-bottom: 1px solid black;
+    border-bottom: 3px solid #F9AC66;
     padding: 1%;
     text-align: left;
 }
 
 .table tr td{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
     padding: 1%;
+}
+
+.table tr td a{
+    text-decoration: none;
+    background-color: black;
+    color: #ece6ce;
+    padding: 4px;
+    margin: 1;    
+    text-align: center;
+
+}
+
+.tableButton{
+
 }
