@@ -1,6 +1,6 @@
 <?php session_start();
 //process-member-login.php
-//receive username and password POST variables
+
 $username = 'BBBRealAdmin';
 $password = 'adminBBB';
 $role = 'Admin';
