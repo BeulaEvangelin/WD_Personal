@@ -1,7 +1,7 @@
 <?php
 
 $name = $_POST["name"];
-$phNo = $POST["phNo"];
+$phNo = $_POST["phNo"];
 $email = $_POST["email"];
 $eventType = isset($_POST["limited"]) ? "Limited Service Catering" : (isset($_POST["full"]) ? "Full Service Catering" : "");
 $eventDate = $_POST["eventDate"];
@@ -18,7 +18,7 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 $success = true;
 
 $stmt = $pdo->prepare("INSERT INTO `catering_table` 
-(`cater_id`, `name`, `email`, `event_type`, `event_date`, `event_location`, `no_0f_guest`) 
+(`cater_id`, `name`, `email`, `event_type`, `event_date`, `event_location`, `no_of_guest`) 
 VALUES 
 (NULL, '$name', '$email', '$eventType', '$eventDate', '$eventLoc', '$guestNo')");
 

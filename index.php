@@ -138,7 +138,7 @@
     <section class="cater-section" id="cater">
       <h1>CATERING SERVICES</h1>
       <h3>(We Dropoff your orders)</h3>
-      <form id="caterForm" action="cater-form.php" method="POST">
+      <form id="caterForm" action="process-catering.php" method="POST">
         <label for="name">Name</label>
         <input type="text" name="name" id="name" autocomplete="name" /><br />
 
@@ -172,6 +172,7 @@
 
         <input type="submit" value="Submit" />
       </form>
+      <p id="output"></p>
     </section>
 
     <section class="contact-section" id="contact-us">
@@ -206,6 +207,7 @@
     <footer id="footer">
       &copy; 2023 Between Breads Bistro. All rights reserved.
     </footer>
+    <script src="catering.js"></script>
     <script src="highlight.js"></script>
   </body>
 </html>
