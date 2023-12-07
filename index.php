@@ -139,11 +139,12 @@
       <h1>CATERING SERVICES</h1>
       <h3>(We Dropoff your orders)</h3>
       <form id="caterForm" action="process-catering.php" method="POST">
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" autocomplete="name" /><br />
+      <fieldset>
+      <label for="name">Name</label>
+        <input type="text" name="name" id="name" autocomplete="name" /><br /><br />
 
         <label for="phNo">Phone Number</label>
-        <input type="text" name="phNo" id="phNo" /><br />
+        <input type="text" name="phNo" id="phNo" /><br /><br />
 
         <label for="email">Email ID</label>
         <input
@@ -151,7 +152,7 @@
           name="email"
           id="email"
           autocomplete="email"
-        /><br />
+        /><br /><br />
 
         Type of Event
         <input type="radio" name="limited" id="limited" />
@@ -159,19 +160,20 @@
 
         <input type="radio" name="full" id="full" />
         <label for="full">Full Service Catering</label>
-        <br />
+        <br /><br />
 
         <label for="eventDate">Date of Event</label>
-        <input type="date" name="eventDate" id="eventDate" /><br />
+        <input type="date" name="eventDate" id="eventDate" /><br /><br />
 
         <label for="eventLoc">Event Location</label>
-        <input type="text" name="eventLoc" id="eventLoc" /><br />
+        <input type="text" name="eventLoc" id="eventLoc" /><br /><br />
 
         <label for="guestNo">No. of Guests</label>
-        <input type="text" name="guestNo" id="guestNo" /><br />
+        <input type="text" name="guestNo" id="guestNo" /><br /><br /><br />
 
         <input type="submit" value="Submit" />
       </form>
+</fieldset>
       <p id="output"></p>
     </section>
 

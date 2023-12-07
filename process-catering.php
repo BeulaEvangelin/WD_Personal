@@ -18,9 +18,9 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 $success = true;
 
 $stmt = $pdo->prepare("INSERT INTO `catering_table` 
-(`cater_id`, `name`, `email`, `event_type`, `event_date`, `event_location`, `no_of_guest`) 
+(`cater_id`, `name`, `phNo`, `email`, `event_type`, `event_date`, `event_location`, `no_of_guest`) 
 VALUES 
-(NULL, '$name', '$email', '$eventType', '$eventDate', '$eventLoc', '$guestNo')");
+(NULL, '$name', '$phNo', '$email', '$eventType', '$eventDate', '$eventLoc', '$guestNo')");
 
 if (!$stmt->execute()) {
     $success = false;
