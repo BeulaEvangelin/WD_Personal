@@ -227,9 +227,36 @@ h1{
     
 }
 
-.cater-section h3{
+.cater-section h3 {
     text-align: center;
+}
 
+form {
+    
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: left;
+}
+
+fieldset {
+    position: relative;
+    background: rgba(0, 0, 0, 0.9);
+    color: #ece6ce;
+    max-width: 600px;
+    padding: 16px;
+    margin: auto;
+    border-color: #F9AC66; 
+    border-width: 2px;
+}
+input[value="Submit"] {
+    
+    background-color: #F9AC66;
+    color: black;
+    font-family: "Love Ya Like A Sister", sans-serif;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
 }
 
 
