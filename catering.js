@@ -17,7 +17,7 @@ function submitCaterForm(event) {
                 let responseJSON = JSON.parse(req.responseText);
                 console.log(responseJSON);
                 if (responseJSON.success === true) {
-                    document.querySelector("#output").innerHTML = "Thank you! We have recieved your catering service request. We will get back to you shorty for further details.";
+                    document.querySelector("#output").innerHTML = "We have received your catering request form. Our team will be in touch with you shortly to gather more details. Thank you!";
                     document.querySelector("#output").style.color = "black";
                     document.querySelector("#output").style.textAlign = "center"; 
                     document.querySelector("#output").style.fontSize = "20px";

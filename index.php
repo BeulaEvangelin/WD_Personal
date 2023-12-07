@@ -136,8 +136,8 @@
     </section>
 
     <section class="cater-section" id="cater">
-      <h1>CATERING SERVICES</h1>
-      <h3>(We Dropoff your orders)</h3>
+      <h1>CATERING SERVICE REQUEST</h1>
+      <p id="output"></p>
       <form id="caterForm" action="process-catering.php" method="POST">
       <fieldset>
       <label for="name">Name</label>
@@ -174,7 +174,7 @@
         <input type="submit" value="Submit" />
       </form>
 </fieldset>
-      <p id="output"></p>
+      
     </section>
 
     <section class="contact-section" id="contact-us">
