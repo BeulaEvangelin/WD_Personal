@@ -19,6 +19,7 @@
 
         <input type="submit" value="Submit">
 </fieldset>
+</section>
 
 <?php include('constants/footer.php');?>
 

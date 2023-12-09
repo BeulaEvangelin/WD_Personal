@@ -2,11 +2,11 @@
 
 *{
     margin: 0;
+    padding: 0;
     font-family: "Love Ya Like A Sister", sans-serif;
     font-size: 18px;
     scroll-behavior: smooth;   
 }
-
 #header{
     background: rgba(0, 0, 0, 0.9);
     padding: 25px;
@@ -56,8 +56,8 @@ fieldset {
     padding-top: 16%;
     padding-left: 5%;
     padding-right: 5%;
-    height: 100vh;
-    
+    height:100vh;
+       
 }
 
 .section h1{
@@ -108,7 +108,7 @@ fieldset {
 
 .table tr td{
     border-bottom: 1px solid black;
-    border-right: 1px solid black;
+    border-left: 1px solid black;
     padding: 1%;
 }
 
