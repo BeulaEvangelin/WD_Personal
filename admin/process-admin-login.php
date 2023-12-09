@@ -30,6 +30,7 @@ if($row = $stmt->fetch()){
         <ul>
         <li><a href="show-menu.php">Manage Menu</a></li>
         <li><a href="edit-about.php">Manage About Us</a></li>
+        <li><a href="edit-about.php">Manage Catering Request</a></li>
         <li><a href="admin-logout.php">Logout</a></li></ul>
         </section>
     <?php include('constants/footer.php');?>
