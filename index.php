@@ -40,57 +40,71 @@
       <img src="Assets/banner.jpg" />
     </section>
 
+
     <section class="menu-section" id="menu">
-      <h1>OUR MENU</h1>
-      <div class="menu-container">
+    <h1>OUR MENU</h1>
+    <div class="menu-container">
         <ul>
-          <li><h2>Classics</h2></li>
-          <li>
-            <h3>Avocado Grilled Cheese - $11</h3>
-            <p>
-              Sour Dough bread, avocado, goat cheese, spinach, basil, parsely
-            </p>
-          </li>
-          <li>
-            <h3>Ham and Cheese - $11</h3>
-            <p>Whole wheat bread, ham, swiss cheese, mustard</p>
-          </li>
-          <li>
-            <h3>Breakfast BLT - $12</h3>
-            <p>White bread, crispy bacon, lettuce, roma tomatoes, mayonnaise</p>
-          </li>
+            <li><h2>Classics</h2></li>
+
+            <?php
+            $dsn = "mysql:host=localhost;dbname=bbb;charset=utf8mb4";
+            $dbusername = "root";
+            $dbpassword = "";
+
+            // Connect to the database
+            $pdo = new PDO($dsn, $dbusername, $dbpassword);
+
+            // Prepare and execute the SQL query
+            $stmt = $pdo->prepare("SELECT * FROM `menu_table` WHERE `category` = 'Classics';");
+            $stmt->execute();
+
+            // Process results
+            while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                ?>
+                <li>
+                    <h3><?= $row["name_and_price"] ?></h3>
+                    <p><?= $row["about"] ?></p>
+                </li>
+            <?php } ?>
+
         </ul>
+
         <ul>
           <li><h2>B' Specials</h2></li>
-          <li>
-            <h3>Roast Beef Sandwich - $18</h3>
-            <p>
-              Brioche bun, sliced roast beef, gravy, fried onions, baby arugula,
-              horseradish, mayonnaise
-            </p>
-          </li>
-          <li>
-            <h3>Chicken Club Sandwich - $14</h3>
-            <p>
-              Sour Dough bread, rotisserie chicken, avacado, mayonnaise,
-              pepperjack
-            </p>
-          </li>
-          <li>
-            <h3>Cajun Grilled Shrimp Sandwich - $18</h3>
-            <p>
-              Whole wheat bread, shrimp, creole, garlic butter, lettuce, onions,
-              tomatoes
-            </p>
-          </li>
-        </ul>
-        <ul>
-          <li><h2>Fries & Drinks</h2></li>
-          <li><h3>Classic salted fries - $8</h3></li>
-          <li><h3>Crinkle cut cajun fries - $9</h3></li>
-          <li><h3>Mimosa - $10</h3></li>
-          <li><h3>Margerita - $10</h3></li>
-        </ul>
+<?php
+//prepare
+$stmt2 = $pdo->prepare("SELECT * FROM `menu_table` WHERE `category` = 'B'' Specials';");
+$stmt2->execute();
+
+//process results
+while ($row = $stmt2->fetch(PDO::FETCH_ASSOC)) {
+  ?>
+  <li>
+      <h3><?= $row["name_and_price"] ?></h3>
+      <p><?= $row["about"] ?></p>
+  </li>
+
+<?php } ?>
+</ul>
+
+<ul>
+<li><h2>Fries & Drinks</h2></li>
+
+<?php
+//prepare
+$stmt3 = $pdo->prepare("SELECT * FROM `menu_table` WHERE `category` = 'Fries & Drinks';");
+$stmt3->execute();
+
+//process results
+while ($row = $stmt3->fetch(PDO::FETCH_ASSOC)) {
+  ?>
+  <li>
+      <h3><?= $row["name_and_price"] ?></h3>
+  </li>
+<?php } ?>
+
+</ul>
       </div>
     </section>
 
