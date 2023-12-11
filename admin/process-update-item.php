@@ -2,7 +2,7 @@
 
 
 $category = $_POST["category"];
-$nameAndPrice = $_POST["nameAndPrice"];
+$nameAndPrice = $_POST["name_and_price"];
 $about = $_POST["about"];
 $item_id = $_POST["item_id"];
 
@@ -21,7 +21,7 @@ SET
 `category`='$category',
 `name_and_price`='$nameAndPrice',
 `about`='$about' 
-WHERE `menu_table`.`item_id`= '$item_id');");
+WHERE `menu_table`.`item_id`= '$item_id';");
 
 //execute
 
