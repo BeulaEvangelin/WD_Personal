@@ -24,10 +24,10 @@
             <li class="cater"><a href="#cater">Catering</a></li>
             <li class="contact-us"><a href="#contact-us">Contact Us</a></li>
             <li>
-              <a href="#"><img class="fblink" src="Assets/fbLogo.png" /></a>
+              <a href="https://www.facebook.com/"><img class="fblink" src="Assets/fbLogo.png" /></a>
             </li>
             <li>
-              <a href="#"
+              <a href="https://www.instagram.com/"
                 ><img class="instalink" src="Assets/instaLogo.png"
               /></a>
             </li>
