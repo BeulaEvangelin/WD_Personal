@@ -392,7 +392,7 @@ body, html{
     padding: 25px;
     position: fixed;
     width: 100%;
-    z-index: 100;
+    z-index: 1000;
 }
 
 #footer{
@@ -466,7 +466,7 @@ body, html{
             margin-top: 30%;
             left: 50%;
             transform: translate(-50%, -50%);
-            z-index: 10;
+            z-index: 210;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -488,7 +488,7 @@ body, html{
             margin-top: 30%;
             left: 50%;
             transform: translate(-50%, -50%);
-            z-index: 8;
+            z-index: 200;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -689,22 +689,23 @@ h1{
     margin: 1;  
     padding: 2px;
     text-align: center;
-    width: 150px;
-    
+    width: 150px;    
 }
 
 .cater-section h3 {
     text-align: center;
+    z-index:200;
 }
 
-form {
+#caterForm {
     
     padding-left: 5%;
     padding-right: 5%;
     text-align: left;
+    z-index:200;
 }
 
-fieldset {
+.caterFieldset {
     position: relative;
     background: rgba(0, 0, 0, 0.9);
     color: #ece6ce;
@@ -713,6 +714,7 @@ fieldset {
     margin: auto;
     border-color: #F9AC66; 
     border-width: 2px;
+    z-index:200;
 }
 input[value="Submit"] {
     

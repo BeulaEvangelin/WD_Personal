@@ -171,7 +171,7 @@ while ($row = $stmt3->fetch(PDO::FETCH_ASSOC)) {
       <h1>CATERING SERVICE REQUEST</h1>
       <p id="output"></p>
       <form id="caterForm" action="process-catering.php" method="POST">
-      <fieldset>
+      <fieldset class="caterFieldset">
       <label for="name">Name</label>
         <input type="text" name="name" id="name" autocomplete="name" /><br /><br />
 
