@@ -29,8 +29,8 @@ if($row = $stmt->fetch()){
         <br/><br/>
         <ul>
         <li><a href="show-menu.php">Manage Menu</a></li>
-        <li><a href="edit-about.php">Manage About Us</a></li>
-        <li><a href="edit-about.php">Manage Catering Request</a></li>
+        <li><a href="show-newsletter.php">View Newsletter Subscribers</a></li>
+        <li><a href="show-catering-request.php">Manage Catering Request</a></li>
         <li><a href="admin-logout.php">Logout</a></li></ul>
         </section>
     <?php include('constants/footer.php');?>
