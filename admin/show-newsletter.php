@@ -25,7 +25,7 @@ $dbpassword = "";
 $pdo = new PDO($dsn, $dbusername, $dbpassword);
 
 //prepare
-$stmt = $pdo->prepare("SELECT * FROM `menu_table`;");
+$stmt = $pdo->prepare("SELECT * FROM `newsletter_table`;");
 
 //execute
 $stmt->execute();
@@ -38,31 +38,21 @@ $stmt->execute();
     ?>
 
     <section class="section">
-        <h1>Manage Menu</h2>
-        <a href="process-admin-login.php">Back to Admin Panel</a>
-        <a class="tableButton" href="add-item.php">Add Item</a><br/>
-        <br/><br/><br/>
+        <h1>BBB Newsletter Subscribers</h2>
+        <br/><br/>
+        <a href="process-admin-login.php">Back to Admin Panel</a><br><<br>
         <table class="table">
             <tr>
-                <th>Item ID</th>
-                <th>Category</th>
-                <th>Name and Price</th>
-                <th>About Item</th>
-                <th>Actions</th>
+                <th>S.no</th>
+                <th>Email ID</th>
             </tr>
 
             <?php
             while ($row = $stmt->fetch()) {
                 ?>
                 <tr>
-                    <td><?php echo $row['item_id']; ?></td>
-                    <td><?php echo $row['category']; ?></td>
-                    <td><?php echo $row['name_and_price']; ?></td>
-                    <td><?php echo $row['about']; ?></td>
-                    <td>
-                        <a href="update-item.php?id=<?php echo $row['item_id']; ?>">Update</a><br/><br/>
-                        <a href="delete-item.php?id=<?php echo $row['item_id']; ?>">Delete</a>
-                    </td>
+                    <td><?php echo $row['newsletter_id']; ?></td>
+                    <td><?php echo $row['email']; ?></td>
                 </tr>
                 <?php
             }
