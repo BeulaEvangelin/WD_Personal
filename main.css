@@ -10,7 +10,7 @@
     #header {
       background: rgba(0, 0, 0, 0.9);
       padding: 25px;
-      position: fixed;
+      position: sticky;
       width: 100%;
       z-index: 100;
     }
@@ -32,7 +32,6 @@
   
     #header .container {
       display: flex;
-      
       align-items: center;
     }
   
@@ -76,8 +75,8 @@
   
     #newsletter-popup {
       position: fixed;
-      margin-top: 30%;
-      left: 50%;
+      margin-top: 60%;
+      left: 40%;
       transform: translate(-50%, -50%);
       z-index: 10;
       display: flex;
@@ -93,7 +92,7 @@
       text-align: center;
       box-sizing: border-box;
       padding: 20px;
-      width: 350px;
+      width: 250px;
     }
   
     #thank-you-popup {
@@ -115,7 +114,7 @@
       text-align: center;
       box-sizing: border-box;
       padding: 20px;
-      width: 350px;
+      width: 250px;
     }
   
     #subscribe-form {
@@ -177,7 +176,7 @@
     .cater-section,
     .contact-section {
       background-color: #ece6ce;
-      padding-top: 14%;
+      padding-top: 5%;
       padding-left: 5%;
       padding-right: 5%;
       height: 100vh;
@@ -216,8 +215,8 @@
     }
   
     .about-section p {
-      text-align: center;
-      width: 53%;
+      text-align: right;
+      width: 55%;
       float: right;
       font-size: 1.4rem;
     }
@@ -230,22 +229,23 @@
       width: 18%;
       height: auto;
       border-radius: 50%;
+      position: relative;
       top: 10px;
-      left: 5px;
+      left: 40px;
     }
   
     .coFounder1 {
       outline: #F9AC66 solid 3px;
       margin: 1;
-      padding: 2px;
+      padding: 1px;
       text-align: center;
       width: 150px;
     }
   
     .CF1Text {
       position: absolute;
-      top: 30px;
-      left: 230px;
+      top: 90px;
+      left: 1px;
     }
   
     .CF2container {
@@ -257,33 +257,33 @@
       height: auto;
       border-radius: 50%;
       position: relative;
-      top: 100px;
-      left: 330px;
+      top: 150px;
+      left: 40px;
     }
   
     .coFounder2 {
       outline: #F9AC66 solid 3px;
       margin: 1;
-      padding: 2px;
+      padding: 1px;
       text-align: center;
       width: 150px;
     }
   
     .CF2Text {
       position: absolute;
-      top: 280px;
-      left: 230px;
+      top: 240px;
+      left: 1px;
     }
   
     .order-section {
       background-image: url("Assets/banner2.jpg");
-      background-size: 50%;
+      background-size: 90%;
       background-repeat: no-repeat;
       background-position: center;
     }
   
     .order-section h1 {
-      color: #ece6ce;
+      color: black; 
     }
   
     .order-container {
@@ -294,7 +294,7 @@
   
     .order-container a {
       position: relative;
-      top: 300px;
+      top: 400px;
       text-decoration: none;
       color: #ece6ce;
       padding: 20px;
@@ -322,7 +322,7 @@
       position: relative;
       background: rgba(0, 0, 0, 0.9);
       color: #ece6ce;
-      max-width: 600px;
+      max-width: 500px;
       padding: 16px;
       margin: auto;
       border-color: #F9AC66;
@@ -344,16 +344,7 @@
       height: auto;
     }
   
-    .divhr {
-      position: relative;
-      width: 60%;
-      float: right;
-      bottom: 20%;
-      height: 7px;
-      border-width: 0;
-      background-color: #F9AC66;
-    }
-  
+
     .address {
       font-size: 1.2rem;
       width: 60%;
@@ -365,9 +356,9 @@
       width: 60%;
       float: right;
       display: flex;
+      flex-direction: column;
       right: 0%;
-      bottom: 15%;
-      flex-direction: row;
+      bottom: 1%;
       justify-content: left;
       align-content: space-around;
       column-gap: 100px;
