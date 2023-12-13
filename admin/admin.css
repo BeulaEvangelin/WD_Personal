@@ -122,4 +122,13 @@ fieldset {
 
 }
 
+input[type="submit"]{
+    text-decoration: none;
+    background-color: black;
+    color: #ece6ce;
+    padding: 20px;
+    outline: #F9AC66 solid 3px;
+    margin: 1;    
+    text-align: center;
+}
 
