@@ -12,7 +12,7 @@ body, html{
     padding: 25px;
     position: fixed;
     width: 100%;
-    z-index: 10000;
+    z-index: 100;
 }
 
 #footer{
@@ -79,12 +79,98 @@ body, html{
     vertical-align: middle;
 }
 
+
+
+        #newsletter-popup{
+            position: fixed;
+            margin-top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            background-color: black;
+            color: #ece6ce;
+            border: 1.5px solid #F9AC66;
+            border-radius: 25px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            box-sizing: border-box;
+            padding: 20px;
+            width: 350px;
+
+        }
+        #thank-you-popup {
+            position: fixed;
+            margin-top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 8;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            background-color: black;
+            color: #ece6ce;
+            border: 1.5px solid #F9AC66;
+            border-radius: 25px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            box-sizing: border-box;
+            padding: 20px;
+            width: 350px;
+        }
+
+        #subscribe-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input [placeholder="Your email"]{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #F9AC66;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[value="Subscribe"] {
+            background-color: #F9AC66;
+            color: black;
+            font-family: "Love Ya Like A Sister", sans-serif;
+            font-size: 1rem;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #newsletter-popup h2,
+        #thank-you-popup h2 {
+            margin: 10%;
+        }
+
+        #close-popup,
+        #close-thank-you-popup {
+            cursor: pointer;
+            color: #F9AC66;
+            text-decoration: underline;
+        }
+
+
 img[alt]{
     width: 20%;
     height: auto;
 }
 .banner{
     background-color: #ece6ce;
+    position: relative;
+    z-index: 1;
 }
 
 .banner img{
@@ -301,8 +387,8 @@ input[value="Submit"] {
 }
 
 .contact-container a{
-    background-color: black;
-    color: #ece6ce;
+    font-size: 1.2rem;
+    color: black;
     left: 20px;
-    bottom: 20px;
+    bottom: 10px;
 }

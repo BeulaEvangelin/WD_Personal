@@ -36,9 +36,27 @@
       </div>
     </header>
 
+    <section class="newsletter">
+      <div id="newsletter-popup">
+        <h2>Subscribe to our Newsletter</h2>
+        <p>Get the latest updates and news straight to your inbox.</p>
+        <form id="subscribe-form" name="subscribe-form" action="process-newsletter.php" method="POST">
+          <input type="email" name="email" id="email" placeholder="Your email" required autocomplete="email" /><br>
+          <input type="submit" value="Subscribe" />
+        </form>
+        <p id="close-popup">No, thanks. I'm not interested.</p>
+      </div>
+      <div id="thank-you-popup">
+        <h2>Thank you for subscribing!</h2>
+        <p>We appreciate your interest.</p>
+        <p id="close-thank-you-popup">Close</p>
+      </div>
+    </section>
+
     <section class="banner" id="home">
       <img src="Assets/banner.jpg" />
     </section>
+
 
 
     <section class="menu-section" id="menu">
@@ -216,7 +234,7 @@ while ($row = $stmt3->fetch(PDO::FETCH_ASSOC)) {
             </h3>
           </li>
         </ul>
-        <a href="admin/admin-login.php">Admin Login</a>
+        <a class="admin-login-link" href="admin/admin-login.php">Admin Login</a>
       </div>
     </section>
 
@@ -225,5 +243,6 @@ while ($row = $stmt3->fetch(PDO::FETCH_ASSOC)) {
     </footer>
     <script src="catering.js"></script>
     <script src="highlight.js"></script>
+    <script src="newsletter.js"></script>
   </body>
 </html>
